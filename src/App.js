@@ -42,7 +42,7 @@ function App() {
   return (
     <>
     <Router>
-      <Navbar title="TextUtils" aboutname="About Us" mode={mode} toggleMode={toggleMode} />
+      <Navbar title="TextUtils" path="/" aboutname="About Us" mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert} />
       <div className="container">
         <Routes>
