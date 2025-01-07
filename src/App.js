@@ -41,20 +41,20 @@ function App() {
   }
   return (
     <>
-    <Router>
-      <Navbar title="TextUtils" path="/" aboutname="About Us" mode={mode} toggleMode={toggleMode} />
-      <Alert alert={alert} />
-      <div className="container">
-        <Routes>
-          <Route path="/about" element={<About mode={mode} />} />
-          <Route path="/" element={
-            <Textform showAlert={showAlert} heading="Try TextUtils - Word Counter, Character Counter" mode={mode} />
+      <Router>
+        <Navbar title="TextUtils" aboutname="About Us" mode={mode} toggleMode={toggleMode} />
+        <Alert alert={alert} />
+        <div className="container">
+          <Routes>
+            <Route path="/about" element={<About mode={mode} />} />
+            <Route path="/" element={
+              <Textform showAlert={showAlert} heading="Try TextUtils - Word Counter, Character Counter" mode={mode} />
             } />
-        </Routes>
-      </div>
-    </Router>
-  </>
-   
+          </Routes>
+        </div>
+      </Router>
+    </>
+
   );
 }
 
